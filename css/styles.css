@@ -1,13 +1,68 @@
 body {
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+}
+.corpo {
     width: 414px;
+    margin: 0 auto;
+    margin-top: 92px;
+    
 }
 .cabecalho {
+    width: 414px;
     height: 92px;
     background-color: #CF2B2B;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0,  0.25));
+    position: fixed;
+    top: 0;
+    left: auto;
 }
 .cabecalho, .main {
     padding-left: 20px;
+}
+.main img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.prato-principal .container-itens, .bebida .container-itens {
+    margin-bottom: 30px;
+
+}
+.item-principal {
+width: 216px;
+}
+.item-bebida {
+width: 202px;
+}
+.item-sobremesa {
+width: 197px;
+}
+.item-principal, .item-bebida, .item-sobremesa {
+    background-color: white;
+    border-radius: 9px;
+    height: 180px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 5px;
+}
+.container-itens {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 16px;
+}
+.container-tens::webkit-scrollbar {
+    display: none;
+}
+.prato-principal{
+    margin-top: 122px;
 }
 .cabecalho h1 {
     font-family: 'Righteous', cursive;
@@ -24,4 +79,39 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: white;
+}
+.main h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-bottom: 17px;
+}
+.main h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #333333;
+}
+.main h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.main h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
