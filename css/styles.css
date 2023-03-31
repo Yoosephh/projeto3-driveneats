@@ -1,6 +1,7 @@
 body {
     background-color: #E5E5E5;
     box-sizing: border-box;
+    margin-bottom: 95px;
 }
 .corpo {
     width: 414px;
@@ -58,9 +59,6 @@ width: 197px;
     overflow-x: scroll;
     gap: 16px;
 }
-.container-tens::webkit-scrollbar {
-    display: none;
-}
 .prato-principal{
     margin-top: 122px;
 }
@@ -114,4 +112,57 @@ width: 197px;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+.button-finalizar {
+    background-color: white;
+    height: 95px;
+    position: fixed;
+    right: auto;
+    bottom: 0;
+    width: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcao-selecionada {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F
+    
+}
+.finalizar {
+    width: 365px;
+    height: 60px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 50px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    background-color: #32B72F;
+    pointer-events:all;
+}
+.button {
+    width: 365px;
+    height: 60px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    border: none;
+    pointer-events: none;
+}
+.button p {
+    padding: 5px 70px;
 }
