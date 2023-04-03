@@ -77,7 +77,7 @@ function calcularPreco() {
           if (comidaEscolhida && bebidaEscolhida && sobremesaEscolhida) {
             botao.classList.remove("button");
             botao.classList.add("finalizar");
-            botao.innerHTML = "Finalizar pedido";
+            botao.innerHTML = "Fechar pedido";
           }
         }
         listaAll();
