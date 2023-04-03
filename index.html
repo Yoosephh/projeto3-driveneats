@@ -1,145 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrivenEats</title>
-</head>
-<body>
+  </head>
+  <body style="position: relative;">
     <div class="corpo">
-        <div class="cabecalho">
-            <h1>DrivenEats</h1>
-            <h2>Sua comida em até 6 minutos!</h2>
+      <div class="cabecalho">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em até 6 minutos!</h2>
+      </div>
+      <div class="main">
+        <div class="prato-principal comida">
+          <h1>Primeiro, seu prato</h1>
+          <div class="container-itens">
+            <span
+              class="item-principal frango"
+              onclick="escolherItem1('.frango')"
+              data-test="dish"
+              data-value="24.99"
+              data-name="Frango Yin Yang"
+            >
+              <img src="./img/prato-1.png" alt="prato-Yin-Yang" />
+              <h2 data-test="item-name">Frango Yin Yang</h2>
+              <h3>Frango com batata e especiarias chinesas</h3>
+              <h4 data-test="item-price">R$ 24,99</h4>
+            </span>
+            <span
+              class="item-principal salada"
+              onclick="escolherItem1('.salada')"
+              data-test="dish"
+              data-value="20.00"
+              data-name="Salada Ceasar"
+            >
+              <img src="./img/prato-2.jpg" alt="salada" />
+              <h2 data-test="item-name">Salada Ceasar</h2>
+              <h3>Salada marota com frango e parmesão</h3>
+              <h4 data-test="item-price">R$ 20,00</h4>
+            </span>
+            <span
+              class="item-principal hamburguer"
+              onclick="escolherItem1('.hamburguer')"
+              data-test="dish"
+              data-name="Hamburgao"
+              data-value="29.99"
+            >
+              <img src="./img/prato-3.png" alt="hamburguer" />
+              <h2 data-test="item-name">Hamburgão maroto</h2>
+              <h3>Famoso hamburgão com fritas</h3>
+              <h4 data-test="item-price">R$ 29,99</h4>
+            </span>
+            <span
+              class="item-principal lasanha"
+              onclick="escolherItem1('.lasanha')"
+              data-test="dish"
+              data-name="Lasanha bolonhesa"
+              data-value="27.50"
+            >
+              <img src="./img/prato-4.jpg" alt="lasanha" />
+              <h2 data-test="item-name">Lasanha bolonhesa</h2>
+              <h3>Deliciosa lasanha com muito queijo</h3>
+              <h4 data-test="item-price">R$ 27,50</h4>
+            </span>
+            <span
+              class="item-principal burrito"
+              onclick="escolherItem1('.burrito')"
+              data-test="dish"
+              data-name="Burrito pollo"
+              data-value="21.99"
+            >
+              <img src="./img/prato-5.png" alt="burrito" />
+              <h2 data-test="item-name">Burrito pollo</h2>
+              <h3>Tradicional burrito de frango empanado</h3>
+              <h4 data-test="item-price">R$ 21,99</h4>
+            </span>
+          </div>
         </div>
-        <div class="main">
-            <div class="prato-principal comida">
-                <h1> Primeiro, seu prato</h1>
-                <div class="container-itens">
-                    <span class="item-principal frango" onclick="escolherItem1('.frango')" data-test="dish"  data-value="24.99">
-                        <img src="./img/prato-1.png" alt="prato-Yin-Yang">
-                        <h2 data-test="item-name">Frango Yin Yang</h2>
-                        <h3>Frango com batata e especiarias chinesas</h3>
-                        <h4 data-test="item-price">R$ 24,99</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span class="item-principal salada" onclick="escolherItem1('.salada')" data-test="dish"  data-value="20.00">
-                        <img src="./img/prato-2.jpg" alt="salada">
-                        <h2 data-test="item-name">Salada Ceasar</h2>
-                        <h3>Salada marota com frango e parmesão</h3>
-                        <h4 data-test="item-price">R$ 20,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span class="item-principal hamburguer" onclick="escolherItem1('.hamburguer')" data-test="dish" data-value="29.99">
-                        <img src="./img/prato-3.png" alt="hamburguer">
-                        <h2 data-test="item-name">Hamburgão maroto </h2>
-                        <h3>Famoso hamburgão com fritas</h3>
-                        <h4 data-test="item-price">R$ 29,99 </h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span class="item-principal lasanha" onclick="escolherItem1('.lasanha')" data-test="dish"  data-value="27.50">
-                        <img src="./img/prato-4.jpg" alt="lasanha">
-                        <h2 data-test="item-name">Lasanha bolonhesa</h2>
-                        <h3>Deliciosa lasanha com muito queijo</h3>
-                        <h4 data-test="item-price">R$ 27,50</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span class="item-principal burrito" onclick="escolherItem1('.burrito')" data-test="dish"  data-value="21.99">
-                        <img src="./img/prato-5.png" alt="burrito">
-                        <h2 data-test="item-name">Burrito pollo</h2>
-                        <h3>Tradicional burrito de frango empanado</h3>
-                        <h4 data-test="item-price">R$ 21,99</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                </div>
-            </div>
-            <div class="bebida">
-                <div><h1>Agora, sua bebida</h1></div>
-                <div class="container-itens bebidas">
-                    <span onclick="escolherItem2('.lata')" class="item-bebida lata " data-test="drink" data-opcao="lata" data-value="6.00">
-                        <img src="./img/bebida-1.png" alt="prato-Yin-Yang">
-                        <h2 data-test="item-name">Refrigerante lata</h2>
-                        <h3>350 mL (Coca-cola, fanta ou guaraná)</h3>
-                        <h4 data-test="item-price">R$ 6,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span onclick="escolherItem2('.seissentos')" class="item-bebida seissentos" data-test="drink" data-opcao="600 mL" data-value="8.00">
-                        <img src="./img/bebidas-2.jpg" alt="prato-Yin-Yang">
-                        <h2 data-test="item-name">Garrafa de 600 mL</h2>
-                        <h3>350 mL (Coca-cola, fanta ou guaraná)</h3>
-                        <h4 data-test="item-price">R$ 8,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span onclick="escolherItem2('.agua')" class="item-bebida agua" data-test="drink" data-opcao="agua" data-value="3.00">
-                        <img src="./img/bebida-3.jpg" alt="prato-Yin-Yang">
-                        <h2 data-test="item-name">Águinha gelada</h2>
-                        <h3>Com ou sem gás, bem geladinha</h3>
-                        <h4 data-test="item-price">R$ 3,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                </div>
-            </div>
-            <div class="dessert">
-                <div><h1>Por fim, sua sobremesa</h1></div>
-                <div class="container-itens sobremesa">
-                    <span onclick="escolherItem3('.pudim')" class="item-sobremesa pudim" data-test="dessert" data-value="9.00">
-                        <img src="./img/sobremesa-1.png" alt="pudim">
-                        <h2 data-test="item-name">O tal do pudim</h2>
-                        <h3>Delicioso pudim de leite com furinhos ❤️ </h3>
-                        <h4 data-test="item-price">R$ 9,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span onclick="escolherItem3('.brigadeiro')" class="item-sobremesa brigadeiro" data-test="dessert" data-value="7.00">
-                        <img src="./img/sobremesa-2.png" alt="brigadeiro">
-                        <h2 data-test="item-name">Brigadeirão</h2>
-                        <h3>O queridão de todo brasileiro </h3>
-                        <h4 data-test="item-price">R$ 7,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                    <span onclick="escolherItem3('.torta')" class="item-sobremesa torta" data-test="dessert" data-value="12.00">
-                        <img src="./img/sobremesa-3.jpg" alt="torta">
-                        <h2 data-test="item-name">Torta de capuccino</h2>
-                        <h3>Incrivel fatia de torta sabor capuccino </h3>
-                        <h4 data-test="item-price">R$ 12,00</h4>
-                        <ion-icon class="icone" name="checkmark-circle"></ion-icon>
-                    </span>
-                </div>
-            </div>
+        <div class="bebida">
+          <div><h1>Agora, sua bebida</h1></div>
+          <div class="container-itens bebidas">
+            <span
+              onclick="escolherItem2('.lata')"
+              class="item-bebida lata"
+              data-test="drink"
+              data-opcao="lata"
+              data-name="Refrigerante lata"
+              data-value="6.00"
+            >
+              <img src="./img/bebida-1.png" alt="prato-Yin-Yang" />
+              <h2 data-test="item-name">Refrigerante lata</h2>
+              <h3>350 mL (Coca-cola, fanta ou guaraná)</h3>
+              <h4 data-test="item-price">R$ 6,00</h4>
+            </span>
+            <span
+              onclick="escolherItem2('.seissentos')"
+              class="item-bebida seissentos"
+              data-test="drink"
+              data-opcao="600 mL"
+              data-name="Refrigerante 600mL"
+              data-value="8.00"
+            >
+              <img src="./img/bebidas-2.jpg" alt="prato-Yin-Yang" />
+              <h2 data-test="item-name">Garrafa de 600 mL</h2>
+              <h3>350 mL (Coca-cola, fanta ou guaraná)</h3>
+              <h4 data-test="item-price">R$ 8,00</h4>
+            </span>
+            <span
+              onclick="escolherItem2('.agua')"
+              class="item-bebida agua"
+              data-test="drink"
+              data-opcao="agua"
+              data-name="Água"
+              data-value="3.00"
+            >
+              <img src="./img/bebida-3.jpg" alt="prato-Yin-Yang" />
+              <h2 data-test="item-name">Águinha gelada</h2>
+              <h3>Com ou sem gás, bem geladinha</h3>
+              <h4 data-test="item-price">R$ 3,00</h4>
+            </span>
+          </div>
         </div>
-        <div class="button-finalizar">
-            <div class="button" data-test="order-btn" onclick="calcularPreco()"><p>Selecione os 3 itens para fechar o pedido</p></div>
+        <div class="dessert">
+          <div><h1>Por fim, sua sobremesa</h1></div>
+          <div class="container-itens sobremesa">
+            <span
+              onclick="escolherItem3('.pudim')"
+              class="item-sobremesa pudim"
+              data-test="dessert"
+              data-name="Pudim de leite"
+              data-value="9.00"
+            >
+              <img src="./img/sobremesa-1.png" alt="pudim" />
+              <h2 data-test="item-name">O tal do pudim</h2>
+              <h3>Delicioso pudim de leite com furinhos ❤️</h3>
+              <h4 data-test="item-price">R$ 9,00</h4>
+            </span>
+            <span
+              onclick="escolherItem3('.brigadeiro')"
+              class="item-sobremesa brigadeiro"
+              data-test="dessert"
+              data-name="Brigadeiro"
+              data-value="7.00"
+            >
+              <img src="./img/sobremesa-2.png" alt="brigadeiro" />
+              <h2 data-test="item-name">Brigadeirão</h2>
+              <h3>O queridão de todo brasileiro</h3>
+              <h4 data-test="item-price">R$ 7,00</h4>
+            </span>
+            <span
+              onclick="escolherItem3('.torta')"
+              class="item-sobremesa torta"
+              data-test="dessert"
+              data-name="Torta de capuccino"
+              data-value="12.00"
+            >
+              <img src="./img/sobremesa-3.jpg" alt="torta" />
+              <h2 data-test="item-name">Torta de capuccino</h2>
+              <h3>Incrivel fatia de torta sabor capuccino</h3>
+              <h4 data-test="item-price">R$ 12,00</h4>
+            </span>
+          </div>
         </div>
-        <div class="confirma-pedido">
-            <div class="tela-confirma">
-                <h1>Confirme seu pedido</h1>
-                <div>
-                    <div class="pratoConfirma">
-                        <div class="nomePrato"></div>
-                        <div class="precoPrato"></div>
-                    </div>
-                    <div class="bebidaConfirma">
-                        <div class="nomeBebida"></div>
-                        <div class="precoBebida"></div>
-                    </div>
-                    <div class="sobremesaConfirma">
-                        <div class="nomeSobremesa"></div>
-                        <div class="precoSobremesa"></div>
-                    </div>
-                    <div class="total">
-                        <h2>TOTAL</h2>
-                        <div class="valorTotal"></div>
-                    </div>
-                </div>
-                <div class="btnPodePedir">Tudo certo, pode pedir!</div>
-                <div class="cancelarPedido"></div>
-            </div>
+      </div>
+      <div class="button-finalizar">
+        <div class="button" data-test="order-btn" onclick="confirmOrder()">
+          <p>Selecione os 3 itens para fechar o pedido</p>
         </div>
+      </div>
     </div>
-<script src="./script/script.js"></script>
-</body>
+    <div class="confirma-pedido">
+      <div class="tela-confirma">
+        <h1>Confirme seu pedido</h1>
+        <div class="item-confirma">
+          <div class="pratoConfirma">
+            <div class="nomePrato"></div>
+            <div class="precoPrato"></div>
+          </div>
+          <div class="bebidaConfirma">
+            <div class="nomeBebida"></div>
+            <div class="precoBebida"></div>
+          </div>
+          <div class="sobremesaConfirma">
+            <div class="nomeSobremesa"></div>
+            <div class="precoSobremesa"></div>
+          </div>
+          <div class="total">
+            <h2>TOTAL</h2>
+            <div class="valorTotal"></div>
+          </div>
+        </div>
+        <button class="btnPodePedir" onclick="finish()">
+          Tudo certo, pode pedir!
+        </button>
+        <div class="cancelarPedido" onclick="cancelOrder()">Cancelar</div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
