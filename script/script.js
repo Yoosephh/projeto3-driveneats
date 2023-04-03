@@ -261,9 +261,7 @@ function calcularPreco() {
       
         const nomeSobremesa = sobremesaEscolhida.dataset.name;
       
-        const pedido = `Olá, gostaria de fazer o pedido:%0A- Prato: ${nomeComida}%0A- Bebida: ${nomeBebida}%0A- Sobremesa: ${nomeSobremesa}%0A%0ATotal: R$${valorTotal.toFixed(
-          2
-        )}`;
+        const pedido = `Olá, gostaria de fazer o pedido:%0A- Prato: ${nomeComida}%0A- Bebida: ${nomeBebida}%0A- Sobremesa: ${nomeSobremesa}%0A%0ATotal: R$${valorTotal.toFixed(2)}`;
       
         const final = encodeURIComponent(pedido);
         window.open(`https://wa.me/5547988570233?text=${final}`);
