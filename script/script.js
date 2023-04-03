@@ -117,7 +117,7 @@ function calcularPreco() {
         const spanElement = document.querySelector(seletor);
         const value3 = spanElement.dataset.value;
         const itemEscolhido = document.querySelector(".sobremesa .opcao-selecionada");
-        if (itemEscolhido !== null && ionIcon !== null) {
+        if (itemEscolhido !== null) {
           itemEscolhido.classList.remove("opcao-selecionada");
         }
         const novoItemEscolhido = document.querySelector(seletor);
